@@ -1,0 +1,54 @@
+<?php
+/**
+ * 
+ * Works with the NC State Official Installation Profile
+ * to enable/disable modules for the associated platform
+ * & set variables
+ * 
+ */
+
+
+// run when updating this module to version 6.x-1.8
+function ncstateofficialgeneralfeature_update_6101() {
+
+	// array of modules that should be disabled by default (that were enabled by default since last release)
+	// careful, as this will disable even the modules that have been manually enabled since deployment using the platform
+	if (module_exists('backup_migrate')) {
+	  	// Disable content_access
+	  	module_disable(array('backup_migrate'));
+	  	// Uninstall content_access
+	  	
+	}
+	
+	// forcibly configure variables that have changed since last release of the install profile
+	// careful, as this will disable even the modules that have been manually enabled since deployment using the platform
+	
+	// Configures cache new settings
+	  variable_set('block_cache', '1');
+	  variable_set('cache', '1');
+  
+  return array();
+
+}
+
+function ncstateofficialgeneralfeature_update_6102() {
+
+	// array of modules that should be disabled by default (that were enabled by default since last release)
+	// careful, as this will disable even the modules that have been manually enabled since deployment using the platform
+	if (module_exists('backup_migrate')) {
+	  	// Disable content_access
+	  	module_disable(array('backup_migrate'));
+	  	// Uninstall content_access
+	  	
+	}
+	
+	// forcibly configure variables that have changed since last release of the install profile
+	// careful, as this will disable even the modules that have been manually enabled since deployment using the platform
+	
+	// Configures cache new settings
+	  variable_set('block_cache', '1');
+	  variable_set('cache', '1');
+  
+  return array();
+
+}

@@ -1,0 +1,8 @@
+name = "NC State Official General Feature"
+description = General feature to work with the NC State Official install profile
+package = NC State University Custom Modules
+
+version="6.x-1.2"
+core = 6.x
+project = "ncstateofficialgeneralfeature"
+php = 5.3

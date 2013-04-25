@@ -56,9 +56,8 @@ function ncstateofficialgeneralfeature_update_6102() {
 function ncstateofficialgeneralfeature_update_6103() {
 
 	// modules to enable
-	if (module_exists('accessibletargetblankfilter')) {
-            module_enable(array('accessibletargetblankfilter'));
-	}
+        module_enable(array('accessibletargetblankfilter'));
+	
   
   return array();
 
